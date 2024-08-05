@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(1, 39, 44);
+    color: white;
+    height: 55px;
+    font-size: 30 px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+/* 
+.line {
+    position: absolute;
+    background-color: rgba(69, 255, 221, 0.511);
+    height: 3px;
+    width: 0vw;
+    transition: width 300ms ease-in-out;
+}
+*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    padding: 30px;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 5vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(200, 255, 250);
+    transform: 150ms;
+}
+
+.game-info {
+    display: flex;
+    padding: 0 30px;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: left;
+}
+
+.img-box img {
+    width: 0;
+    transition: width 300ms ease-in-out;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.info {
+    font-size: 30px;
+}
+
+#restart {
+    margin: 5px;
+    padding: 3px 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 30px;
+    background: #c7fffa;
+    width: min-content;
+    border: 0;
+}
+
+#restart:hover {
+    background: rgb(102, 221, 211);
+    transition: transform 150ms;
+    transform: scale(1.05);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(172, 251, 250, 0.5);
+}
+
+@media screen and (width<800px) {
+    .game-container {
+        flex-wrap: wrap;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+        margin-bottom: 34px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .info {
+        font-size: 20px;
+    }
+    #restart {
+        font-size: 20px;
+    }
+    .box {
+        font-size: 10vw;
+    }
+}

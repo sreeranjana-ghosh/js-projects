@@ -1,0 +1,274 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text color */
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+a {
+    color: #ffcc00; /* Bright color for links */
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+header {
+    background-color: rgba(16,9,9); 
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #ffcc00; /* Bright logo color */
+    font-size: 24px;
+    margin: 0;
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-bar ul li {
+    margin: 0 15px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 18px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .icon {
+    color: #ffcc00; /* Bright icon color */
+    font-size: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.header-right .sign-in {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Banner styles */
+.banner {
+    /* background-image: url('https://t4.ftcdn.net/jpg/05/86/05/89/360_F_586058915_duIKTntFJ6UTg3aVtaCfUPuZMOly6XWf.jpg'); Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 115vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffcc00;
+    text-align: center;
+    position: relative;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 24px;
+    margin: 10px 0 0;
+}
+
+/* Menu Section styles */
+.menu-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgb(16,9,9); /* Dark background color */
+}
+
+.menu-heading-box {
+    display: inline-block;
+    padding: 20px 40px;
+    border: 2px solid #ffcc00; /* Bright border color */
+    background-color: #444444; /* Darker background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.menu-section h2 {
+    font-size: 36px;
+    color: #ffcc00; /* Bright heading color */
+    margin: 0;
+}
+
+/* Menu Items styles */
+.menu-items {
+    padding: 50px 0;
+    background-color: #000000; /* White background color */
+}
+
+.menu-items .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.menu-item h3 a {
+    text-decoration: none;
+    color: #ffcc00; /* Coffee color */
+}
+
+.menu-item p {
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+/* Responsive design for Menu Items */
+@media (max-width: 768px) {
+    .menu-item {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .menu-row {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .menu-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.divide{
+    background-image: url('https://t4.ftcdn.net/jpg/05/86/05/89/360_F_586058915_duIKTntFJ6UTg3aVtaCfUPuZMOly6XWf.jpg');
+}
+/* Footer styles */
+footer {
+    background-color: #000000; /* Dark background */
+    color: #ffcc00; /* White text color */
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.footer-location,
+.footer-contact {
+    flex: 1;
+    padding: 10px;
+    align-items: self-start;
+}
+
+.footer-location h4,
+.footer-contact h4 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #ffcc00; /* Bright color for section headers */
+}
+
+.footer-location p,
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.footer-contact a {
+    color: #ffcc00; /* Bright color for links */
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design for Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-location,
+    .footer-contact {
+        flex: none;
+        margin-bottom:20px;
+}
+}

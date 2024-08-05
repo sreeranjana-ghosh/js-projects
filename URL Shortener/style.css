@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    height: 100vh;
+    gap: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+.text {
+    text-align: center;
+}
+
+img {
+    width: 300px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-container input {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    width: min(100%, 40rem);
+    font-size: 1rem;
+}
+
+.result .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: auto;
+}
+
+.input-container button,
+.newUrl-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    text-align: center;
+    background-color: rgb(26, 243, 210);
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.input-container button:hover,
+.newUrl-btn:hover {
+    background-color: rgb(45, 210, 185);
+    transform: scale(1.03);
+}
